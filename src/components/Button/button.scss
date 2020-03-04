@@ -1,0 +1,56 @@
+@import "../../sass/colors";
+
+.btn {
+  background: $primary;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  border: none;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+
+  &:disabled {
+    opacity: 0.2;
+  }
+  &:hover:enabled {
+    background: $hover;
+  }
+
+  &-success {
+    background: $success;
+    &:hover:enabled {
+      background: #58b86e;
+    }
+  }
+
+  &-danger {
+    background: $danger;
+    &:hover:enabled {
+      background: #d24553;
+    }
+  }
+
+  &-warning {
+    background: $warning;
+    &:hover:enabled {
+      background: #deab12;
+    }
+  }
+
+  &-info {
+    background: $info;
+    &:hover:enabled {
+      background: #3d99a7;
+    }
+  }
+}
+
+.puto {
+  color: red;
+}
